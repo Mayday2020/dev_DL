@@ -9,12 +9,70 @@
     <title>Page1</title>
 </head>
 <body>
-<div>PAGE 1</div>
-<button id="closeWindow"> X </button>
-<!--<div id="page1" class="close">page1</div>
-<div id="page2" class="close">page2</div>
-<div id="page3" class="open">page3</div>-->
-<button id="back">Back</button>
+<div class="page_one" id="page_id">
+    <header class="pageOne-header">
+        <div class="pageOne-header_label">Т-БАНК</div>
+        <div class="pageOne-header_info">
+            <div class="pageOne-header_client-info1">Ершова Ксения Олеговна</div>
+            <div class="pageOne-header_client-info2">
+                <div class="pageOne-header_info-item pageOne-header_info-item-age">Ж. 32 года</div>
+                <div class="pageOne-header_info-item">11:52</div>
+                <div class="pageOne-header_info-item">Исход</div>
+                <div class="pageOne-header_info-item">CC Prompt: Отказы КК КМ[1] без ГО</div>
+            </div>
+        </div>
+        <div class="pageOne-header_call-panel">
+            <div class="pageOne-header_timer">00:27</div>
+            <div class="pageOne-header_transfer"></div>
+            <div class="pageOne-header_microphone"></div>
+            <div class="pageOne-header_call-drop"></div>
+        </div>
+    </header>
+    <main>
+        <nav class="pageOne-main_navigation">
+            <ul class="pageOne-main_navigation-list">
+                <li class="active-list">Задание</li>
+                <li>Недозвон</li>
+                <li>Перезвон</li>
+                <li>Отказ</li>
+                <li>Дополнительно</li>
+            </ul>
+        </nav>
+        <div class="pageOne-main">
+            <div class="pageOne-main_content">
+                <h3>Работа с заданием</h3>
+                <div class="pageOne-main_sp">
+                    <span>Ксения Олеговна, мы одобрили вам кредитную карту Платинум с бесплатным
+                        <br/>обслуживанием навсегда. Выпустим и доставим бесплатно.</span>
+                </div>
+                <div>
+                    <span>Проводи презентацию карты под потребность клиента.</span>
+                    <br/><a href="#">Калькулятор с тарифным планом</a>
+                    <br/><a href="#">Калькулятор без тарифного плана</a>
+                </div>
+            </div>
+            <div class="pageOne-main_sidebar">
+                <h3>Описание задания</h3>
+                <p>Обзвон заявителей, которым не был одобрен продукт банка, с целью предложения КК Platinum с бесплатным ГО навсегда.</p>
+                <p>Дата действия предложения: 18.04.2024 04:29
+                    <br/>Информация по продукту: Platinum </p>
+                <p>Условия акции <a href="#">Рублевый кэшбэк Платинум</a>
+                    <br/>Условия <a href="#">программы лояльности</a>
+                    <br/>Баллы за успешное выпонение задания: 5.42
+                </p>
+
+                <h3>История</h3>
+                <ul class="pageOne-main_sidebar-list">
+                    <li>Исход, 19.02.2024 16:51</li>
+                    <li>Недозвон</li>
+                    <li>Автоответчик</li>
+                    <li>Оператор: d.likholetov</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+</div>
+<button id="back" disabled>Back</button>
 <button id="next">Next</button>
 <script src="script.js"></script>
 </body>
