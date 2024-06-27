@@ -5,8 +5,14 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.4.2/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.4.2/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.4.2/uicons-regular-straight/css/uicons-regular-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.4.2/uicons-thin-straight/css/uicons-thin-straight.css'>
+
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.4.2/uicons-regular-rounded/css/uicons-regular-rounded.css'>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Page1</title>
+    <title>Интерфейс 1</title>
 </head>
 <body>
 <div class="page_one" id="page_id">
@@ -22,13 +28,13 @@
             </div>
         </div>
         <div class="pageOne-header_call-panel">
-            <div class="pageOne-header_timer">00:27</div>
-            <div class="pageOne-header_transfer"></div>
-            <div class="pageOne-header_microphone"></div>
-            <div class="pageOne-header_call-drop"></div>
+            <div class="pageOne-header_call-item pageOne-header_timer">00:27</div>
+            <div class="pageOne-header_call-item"> <i class="fi fi-br-call-outgoing"></i></div>
+            <div class="pageOne-header_call-item"> <i class="fi fi-rs-circle-microphone"></i></div>
+            <div class="pageOne-header_call-item"> <i class="fi fi-sr-square-phone-hangup"></i></div>
         </div>
     </header>
-    <main>
+    <main class="pageOne-main">
         <nav class="pageOne-main_navigation">
             <ul class="pageOne-main_navigation-list">
                 <li class="active-list">Задание</li>
@@ -38,17 +44,45 @@
                 <li>Дополнительно</li>
             </ul>
         </nav>
-        <div class="pageOne-main">
+        <div class="pageOne-main_content-center">
             <div class="pageOne-main_content">
                 <h3>Работа с заданием</h3>
                 <div class="pageOne-main_sp">
-                    <span>Ксения Олеговна, мы одобрили вам кредитную карту Платинум с бесплатным
-                        <br/>обслуживанием навсегда. Выпустим и доставим бесплатно.</span>
+                    <div class="pageOne-main_sp-item"><i class="fi fi-rr-volume"></i></div>
+                    <div class="pageOne-main_sp-item">
+                        <span>Ксения Олеговна, мы одобрили вам <span class="mark">кредитную карту Платинум с бесплатным
+                        <br/>обслуживанием навсегда.</span> Выпустим и доставим бесплатно.</span>
+                    </div>
                 </div>
                 <div>
-                    <span>Проводи презентацию карты под потребность клиента.</span>
-                    <br/><a href="#">Калькулятор с тарифным планом</a>
-                    <br/><a href="#">Калькулятор без тарифного плана</a>
+                    <div class="pageOne-main_help-item">Проводи презентацию карты под потребность клиента.</div>
+                    <div class="pageOne-main_help-item"><a href="#">Калькулятор с тарифным планом</a></div>
+                    <div class="pageOne-main_help-item"><a href="#">Калькулятор без тарифного плана</a></div>
+                </div>
+                <div class="pageOne-main_burger">
+                    <div class="pageOne-main_burger-item">
+                        <div>Рублевый кэшбэк</div>
+                        <div><i class="fi fi-ts-angle-small-down"></i></div>
+                    </div>
+                    <div class="pageOne-main_burger-item">
+                        <div>Беспроцентный период</div>
+                        <div><i class="fi fi-ts-angle-small-down"></i></div>
+                    </div>
+                    <div class="pageOne-main_burger-item">
+                        <div>Перевод баланса</div>
+                        <div><i class="fi fi-ts-angle-small-down"></i></div>
+                    </div>
+                    <div class="pageOne-main_burger-item">
+                        <div>Рассрочка</div>
+                        <div><i class="fi fi-ts-angle-small-down"></i></div>
+                    </div>
+                    <div class="pageOne-main_burger-item">
+                        <div>Оплата услуг через приложение</div>
+                        <div><i class="fi fi-ts-angle-small-down"></i></div>
+                    </div>
+                </div>
+                <div>
+                    <button class="page-buttons pageOne-main_button">Далее</button>
                 </div>
             </div>
             <div class="pageOne-main_sidebar">
@@ -56,14 +90,13 @@
                 <p>Обзвон заявителей, которым не был одобрен продукт банка, с целью предложения КК Platinum с бесплатным ГО навсегда.</p>
                 <p>Дата действия предложения: 18.04.2024 04:29
                     <br/>Информация по продукту: Platinum </p>
-                <p>Условия акции <a href="#">Рублевый кэшбэк Платинум</a>
+                <p><span class="mark">Участник акции <a href="#">Рублевый кэшбэк Платинум</a></span>
                     <br/>Условия <a href="#">программы лояльности</a>
                     <br/>Баллы за успешное выпонение задания: 5.42
                 </p>
-
                 <h3>История</h3>
                 <ul class="pageOne-main_sidebar-list">
-                    <li>Исход, 19.02.2024 16:51</li>
+                    <li id="mark-list-item">Исход, 19.02.2024 16:51</li>
                     <li>Недозвон</li>
                     <li>Автоответчик</li>
                     <li>Оператор: d.likholetov</li>
@@ -72,8 +105,10 @@
         </div>
     </main>
 </div>
-<button id="back" disabled>Back</button>
-<button id="next">Next</button>
+<div class="page-buttons_panel">
+    <button class="page-buttons" id="back" disabled>Назад</button>
+    <button class="page-buttons" id="next">Далее</button>
+</div>
 <script src="script.js"></script>
 </body>
 </html>
